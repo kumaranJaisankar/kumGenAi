@@ -51,7 +51,7 @@ body {
   align-self: flex-start;
   gap: 54px;
   width: 65%;
-  padding-top: 56px;
+  padding-top: 10px;
   padding-bottom: 56px;
   padding-left: 56px;
   padding-right: 12px;
@@ -237,6 +237,7 @@ body {
 }
 
 .topic-icon {
+  background-color: #1f2937;
   box-sizing: border-box;
   flex-shrink: 0;
   /* width: 64px;
@@ -248,7 +249,7 @@ body {
   padding: 20px 16px;
   /* -webkit-backdrop-filter: blur(10px); */
   /* backdrop-filter: blur(10px); */
-  background-color: rgba(30, 41, 59, 0.2);
+  /* background-color: rgba(30, 41, 59, 0.2); */
   /* overflow: hidden; */
   position: relative;
   align-content: center;
@@ -474,8 +475,33 @@ body {
     gap: 6px;
   }
 }
+#component-6 {
+  background: #f37f30 !important;
+}
 
 @media screen and (max-width: 576px) {
+  #component-5 {
+    display: block !important;
+    min-width: 130px !important;
+    height: 40px;
+    flex-grow: 1 !important;
+  }
+  #component-4 {
+    display: block !important;
+  }
+  #component-6 {
+    min-height: 30%;
+    display: flex !important;
+    width: 100% !important;
+  }
+  #component-3 {
+    display: inline-block !important;
+    height: 200px;
+  }
+  .styler {
+    height: 80px;
+    display: block !important;
+  }
   .description-container {
     padding: 32px 24px;
   }
@@ -511,6 +537,7 @@ body {
 }
 
 .about-section {
+  /* background-color: #1f2937; */
   color: rgba(212, 212, 212, 0.6);
   border-radius: 8px;
   border: 1px solid #1e293b;
