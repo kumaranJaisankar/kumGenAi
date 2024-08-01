@@ -1,4 +1,12 @@
 const socialIconButtons = document.getElementsByClassName("social-icon");
+const profileDetail = document.getElementById("Details");
+
+function pageLoad() {
+  var ageDifMs = Date.now();
+  var ageDate = new Date(ageDifMs); // miliseconds from epoch
+  let age = Math.abs(ageDate.getUTCFullYear() - 2000);
+  profileDetail.innerText = `${age} Years Old | Youthful | Intelligent & Dynamic AI`;
+}
 
 function postToSocialMedia(classList) {
   const content = `Check out my cool generative AI Project 😎 \n${window.location.href.toString()}`;
